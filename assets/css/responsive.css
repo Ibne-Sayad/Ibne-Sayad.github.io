@@ -1,0 +1,190 @@
+/*****************************************  
+Author: ThemeRed
+Version: 1.0
+URL: http://themered.com
+*****************************************/
+
+
+
+
+
+/*****************************************
+                 General
+*****************************************/
+@media (max-width: 1199px) {    
+    .sticky-menu ul {
+        width: 779px;
+    }
+    
+    .sticky-menu ul a {
+        padding: 0 4px;
+    }
+    
+    .width-menu ul {
+        width: 100%;
+    }
+    
+    .width-menu ul a {
+        padding: 0 10px;
+    }
+    
+    .scroll-to-top {
+        line-height: 50px;
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/*****************************************
+               Tablet 
+*****************************************/
+@media (max-width: 991px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .section-pad {
+        padding: 80px 0;
+    }
+    
+    .section-title {
+        margin-bottom: 80px;
+    }
+    
+    .profile-desc {
+        width: 350px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    .resume-area>.container>.row {
+        margin-bottom: 80px;
+    }
+    
+    .sticky-menu ul {
+        width: 720px;
+    }
+    
+    .width-menu ul {
+        width: 100%;
+    }
+    
+    .width-menu ul a {
+        padding: 0 7px;
+    }
+    
+    .profile-pic {
+        margin-bottom: 30px;
+    }
+    
+    .profile-title {
+        text-align: center;
+    }
+    
+    .resume-title {
+        margin-bottom: 30px;
+    }
+    
+    .stick.is-affixed {
+        height: auto!important;
+    }
+    
+    .inner-wrapper-sticky {
+        position: unset!important;
+        transform: none!important;
+    }
+    .scroll-to-top {
+        line-height: 40px;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/***************************************** 
+                Mobile
+*****************************************/
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 15px;
+    }
+    
+    .sticky-menu ul {
+        position: relative;
+    }
+    
+    .stretchy-nav {
+        position: fixed;
+        top: 20px;
+    }
+    
+    .stretchy-nav ul {
+        padding: 40px 0 0;
+    }
+    
+    .sticky-menu.nav-is-visible ul li {
+        display: initial;
+    }
+    
+    .intro-content p {
+        font-size: 1em;
+    }
+    
+    .intro-content h1 {
+        font-size: 2em;
+    }
+    
+    .profile-pic img {
+        height: 190px;
+    }
+    
+    .head-down-arr a {
+        padding: 10px 8px;
+    }
+    
+    .profile-desc {
+        width: 360px;
+    }
+    
+    #filters {
+        margin-bottom: 40px;
+    }
+    
+    #filters li {
+        margin: 0 5px 10px;
+    }
+    
+    .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/***************************************** 
+              Small Mobile
+*****************************************/
+@media only screen and (max-width: 480px) {
+    .profile {
+        padding: 40px;
+    }
+    
+    .profile-desc,
+    .profile-desc-title,
+    .profile-desc-det {
+        display: block;
+        width: auto;
+        margin: 0;
+    }
+    
+    .profile-desc li {
+        text-align: center;
+    }
+    
+    .resume-card h4 .date,
+    .skill-card .exp{
+        display: block;
+    }
+    
+    #filters li span {
+        padding: 3px 12px;
+    }
+}
