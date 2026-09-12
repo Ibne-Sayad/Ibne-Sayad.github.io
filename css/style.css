@@ -1863,8 +1863,17 @@ body[style], header[style] {
           box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
 }
 
+.professional-experience .row > .col-lg-12,
+.professional-experience .row > .col-lg-6 {
+  display: flex;
+}
+
 .professional-experience .experience-role {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
   overflow-wrap: anywhere;
 }
 
@@ -1902,6 +1911,7 @@ body[style], header[style] {
 }
 
 .professional-experience .experience-tools {
+  margin-top: auto;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -4384,7 +4394,7 @@ body[style], header[style] {
 /* Final consistency and accessibility adjustments. */
 :root {
   --card-radius: 24px;
-  --card-shadow: 0 8px 24px rgba(23, 23, 24, 0.06);
+  --card-shadow: 0 3px 12px rgba(23, 23, 24, 0.035);
   --accent-readable: #b83a00;
 }
 html { scroll-behavior: smooth; }
@@ -4423,7 +4433,9 @@ select:focus-visible, textarea:focus-visible {
 #wrapper .experience-role, #wrapper .education-card, #wrapper .expertise-card,
 #wrapper .selected-project-card, #wrapper .recommendation-card, #wrapper .writing-card,
 #wrapper .featured-project {
-  border-radius: var(--card-radius); box-shadow: var(--card-shadow);
+  border-radius: var(--card-radius);
+  -webkit-box-shadow: var(--card-shadow);
+  box-shadow: var(--card-shadow);
 }
 #wrapper .section-heading span, #wrapper .section-heading-left span,
 #wrapper .about-label, #wrapper .primary-btn .text,

@@ -46,6 +46,11 @@ function Filaous_ContactForm() {
     const buttonText = button.querySelector(".text");
     const status = document.getElementById("contactStatus");
 
+    // Native validation runs before submit and invalid events do not bubble.
+    form.addEventListener("invalid", function() {
+        status.textContent = "Please complete all required fields and enter a valid email address before sending.";
+    }, true);
+
     form.addEventListener("submit", async function(event) {
         event.preventDefault();
         if (button.disabled || !form.reportValidity()) return;
