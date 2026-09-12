@@ -38,33 +38,6 @@
   background: #ff4500;
 }
 
-#portfolioCarousel.owl-carousel .owl-nav button span {
-  color: #ff4500;
-  background: #fff;
-}
-
-#portfolioCarousel.owl-carousel .owl-nav button:hover {
-  border-color: #ff4500;
-}
-
-#portfolioCarousel.owl-carousel .owl-nav button:hover span {
-  color: #fff;
-  background: #ff4500;
-}
-
-#testimonialCarousel.owl-carousel .owl-nav button, #blogCarousel.owl-carousel .owl-nav button {
-  color: #fff;
-  border: 2px solid #ff4500;
-}
-
-#testimonialCarousel.owl-carousel .owl-nav button span, #blogCarousel.owl-carousel .owl-nav button span {
-  background: #ff4500;
-}
-
-#testimonialCarousel.owl-carousel .owl-nav button.owl-prev, #blogCarousel.owl-carousel .owl-nav button.owl-prev {
-  margin-right: 10px;
-}
-
 .white-btn {
   background: #ff4500;
 }
@@ -215,43 +188,6 @@
           box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.2);
 }
 
-.services-item {
-  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-          box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-}
-
-.services-item .body h4 {
-  color: #ff4500;
-}
-
-.services-item .body a i {
-  color: #ff4500;
-}
-
-.services-item .body a:hover {
-  color: #ff4500;
-}
-
-.services-item .icon span {
-  background: #ff4500;
-}
-
-.services-item .icon-border:after, .services-item .icon-border:before {
-  border-color: #ff4500;
-}
-
-.services-item:hover .body a i {
-  color: #ff4500;
-}
-
-.services-item:hover .body a:hover {
-  color: #ff4500;
-}
-
-.services-detail-top span {
-  background: #ff4500;
-}
-
 .web-design-process .design-process-video .design-process-video-btn i {
   color: #ff4500;
 }
@@ -313,81 +249,6 @@
   border-color: #ff4500;
 }
 
-.skills-inner > h6 {
-  background: #ff4500;
-}
-
-.skills-inner ul li:before {
-  color: #ff4500;
-}
-
-.skills-inner .skills-item {
-  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-          box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-}
-
-.skills-inner .skills-item .skills-item-text h5 {
-  background: #ff4500;
-}
-
-.skills-inner .skills-item .skills-progress-bar .skills-progress-value {
-  background: #ff4500;
-}
-
-.skills-img img {
-  border-color: #ff4500;
-}
-
-.skills-img .icon-check {
-  background: #ff4500;
-}
-
-.skills-img .icon-border-line:after, .skills-img .icon-border-line:before {
-  border-color: #ff4500;
-}
-
-.portfolio-filter a {
-  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-          box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-}
-
-.portfolio-filter a:hover, .portfolio-filter a.current {
-  background: #ff4500;
-}
-
-.portfolio-item .portfolio-item-inner {
-  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-          box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-}
-
-.portfolio-item .portfolio-item-img .portfolio-zoom-link {
-  color: #ff4500;
-}
-
-.portfolio-item .portfolio-item-img .portfolio-zoom-link:hover {
-  background: #ff4500;
-}
-
-.portfolio-item .portfolio-item-img .portfolio-zoom-link:hover:after, .portfolio-item .portfolio-item-img .portfolio-zoom-link:hover:before {
-  border-color: #ff4500;
-}
-
-.portfolio-item .body .portfolio-details span {
-  color: #ff4500;
-}
-
-.portfolio-item .body .portfolio-details h5 a:hover {
-  color: #ff4500;
-}
-
-.portfolio-item .body .portfolio-link:hover {
-  border-color: #ff4500;
-}
-
-.portfolio-item .body .portfolio-link:hover i {
-  background: #ff4500;
-}
-
 .portfolio-single-inner .author-meta a:after {
   border-left-color: #ff4500;
 }
@@ -414,31 +275,6 @@
 
 .team-card:hover .img {
   border-color: #ff4500;
-}
-
-.testimonial-item {
-  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-          box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-}
-
-.testimonial-item .img {
-  border-color: #ff4500;
-}
-
-.testimonial-item .body span {
-  color: #ff4500;
-}
-
-.testimonial-item .body .rating i {
-  color: #ff4500;
-}
-
-.testimonial-item .quote-icon {
-  border-color: #ff4500;
-}
-
-.testimonial-item .quote-icon i {
-  background: #ff4500;
 }
 
 .blog-item {
@@ -696,24 +532,6 @@
 
 .header-shrink .nav-item .nav-link:not(.active):after {
   background: #ff4500;
-}
-
-.demo-item {
-  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-          box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-}
-
-.demo-item .demo-item-link {
-  background: #ff4500;
-}
-
-.demo-item .demo-item-link:hover {
-  color: #fff !important;
-}
-
-.demo-features-item {
-  -webkit-box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
-          box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
 }
 
 /* ---------------------------------------------------------------- */
