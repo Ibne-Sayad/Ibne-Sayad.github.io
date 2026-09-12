@@ -4494,3 +4494,16 @@ select:focus-visible, textarea:focus-visible {
 #wrapper .how-i-work-item .number span,
 #wrapper .how-i-work-item:hover .text { background: var(--accent-readable); color: #fff; }
 #wrapper .white-btn:hover .text { background: #171718; color: #fff; }
+
+/* Keep the About resume button fill on the whole pill, not its text span. */
+#wrapper #about .primary-btn {
+  background: var(--accent-readable);
+}
+
+#wrapper #about .primary-btn:hover {
+  background: #171718;
+}
+
+#wrapper #about .primary-btn .text {
+  background: transparent;
+}
