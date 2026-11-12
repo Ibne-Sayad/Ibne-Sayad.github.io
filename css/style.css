@@ -1863,65 +1863,265 @@ body[style], header[style] {
           box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
 }
 
-.professional-experience .row > .col-lg-12,
-.professional-experience .row > .col-lg-6 {
-  display: flex;
+/* Experience showcase: all rules are scoped to this section. */
+#experience .experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
 }
 
-.professional-experience .experience-role {
+#wrapper #experience .experience-role {
+  display: grid;
+  grid-template-columns: minmax(0, 72fr) minmax(0, 28fr);
+  grid-template-rows: auto 1fr auto;
+  column-gap: 28px;
+  min-width: 0;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #e5e5e8;
+  border-radius: var(--card-radius, 24px);
+  box-shadow: 0 5px 20px rgba(23, 23, 24, 0.045);
+}
+
+#experience .experience-featured,
+#experience .experience-secondary {
+  grid-column: 1 / -1;
+}
+
+#wrapper #experience .experience-featured {
+  padding: 36px;
+  border-top: 4px solid var(--accent-readable, #b83a00);
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(23, 23, 24, 0.065);
+}
+
+#experience .experience-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+/* Branding shares the white card surface; no logo boxes or colored panels. */
+#experience .experience-card-header,
+#experience .experience-contributions,
+#experience .experience-tools {
+  grid-column: 1;
+  min-width: 0;
+}
+
+#experience .experience-brand {
+  grid-column: 2;
+  grid-row: 1 / 4;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+}
+
+#experience .experience-brand img {
+  display: block;
   width: 100%;
-  overflow-wrap: anywhere;
+  height: 48px;
+  max-width: 180px;
+  object-fit: contain;
 }
 
-.professional-experience .most-recent-role {
-  border-top: 4px solid #ff4500;
+#experience .experience-brand-label {
+  margin: 0;
+  color: #61616a;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
 }
 
-.professional-experience h3 {
-  font-size: 22px;
-  line-height: 1.45;
-  margin-bottom: 8px;
+#experience .experience-brand-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
 }
 
-.professional-experience .experience-role-title {
-  color: #171718;
+#experience .experience-brand-logos img {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+#experience .experience-brand-logos .experience-brand-bmw {
+  width: 48px;
+}
+
+#experience .experience-brand-logos .experience-brand-mini {
+  width: 76px;
+}
+
+#experience .experience-brand-logos .experience-brand-rolls {
+  width: 90px;
+}
+
+#experience .experience-heading {
+  flex: 1;
+  min-width: 0;
+}
+
+#experience h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+#experience .experience-featured h3 {
+  font-size: 26px;
+}
+
+#experience .experience-role-title {
+  margin: 0 0 10px;
+  color: #303037;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.6;
-  margin-bottom: 6px;
 }
 
-.professional-experience .experience-meta {
+#experience .experience-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+
+#experience .experience-meta p {
+  margin: 0;
+  color: #61616a;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
-.professional-experience .experience-contributions {
-  list-style: disc;
+#experience .experience-status {
+  flex-shrink: 0;
+  padding: 5px 12px;
+  border: 1px solid #e8c5b2;
+  border-radius: 100px;
+  background: #fff3e9;
+  color: #953000;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+#experience .experience-contributions {
   padding-left: 20px;
-  margin: 18px 0;
+  margin: 24px 0;
+  list-style: disc;
+  color: #45454e;
 }
 
-.professional-experience .experience-contributions li {
-  line-height: 1.7;
-  margin-bottom: 8px;
+#experience .experience-contributions li {
+  padding-left: 4px;
+  margin-bottom: 9px;
+  line-height: 1.75;
 }
 
-.professional-experience .experience-tools {
-  margin-top: auto;
-  font-size: 14px;
-  line-height: 1.7;
+#experience .experience-contributions li:last-child {
+  margin-bottom: 0;
 }
 
-@media only screen and (max-width: 575.98px) {
-  .professional-experience .experience-role {
-    padding: 24px;
+#experience .experience-contributions li::marker {
+  color: var(--accent-readable, #b83a00);
+}
+
+#experience .experience-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 18px 0 0;
+  margin: auto 0 0;
+  border-top: 1px solid #ededf0;
+  list-style: none;
+}
+
+#experience .experience-tools li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #e5e5e8;
+  border-radius: 8px;
+  background: #f7f7f9;
+  color: #45454e;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+#experience .experience-tools .experience-tool-icon {
+  display: block;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+#experience .experience-tools .experience-tool-label {
+  min-width: 0;
+}
+
+@media (max-width: 991.98px) {
+  #experience .experience-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
-  .professional-experience h3 {
-    font-size: 20px;
+  #wrapper #experience .experience-role {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+  }
+  #experience .experience-brand {
+    grid-column: 1;
+    grid-row: 2;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 24px;
+  }
+  #experience .experience-brand-logos {
+    justify-content: flex-start;
+    width: auto;
+    max-width: 100%;
+  }
+  #experience .experience-contributions {
+    grid-row: 3;
+  }
+  #experience .experience-tools {
+    grid-row: 4;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #wrapper #experience .experience-role {
+    padding: 22px;
+  }
+  #experience .experience-card-header {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  #experience .experience-heading {
+    flex-basis: 100%;
+  }
+  #experience .experience-brand img {
+    height: 40px;
+  }
+  #experience .experience-brand-logos {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  #experience h3 {
+    font-size: 18px;
+  }
+  #experience .experience-featured h3 {
+    font-size: 23px;
+  }
+  #experience .experience-meta {
+    flex-direction: column;
   }
 }
 
