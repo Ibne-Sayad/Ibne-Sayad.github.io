@@ -118,6 +118,12 @@
         <main class="main-area" id="main-content" tabindex="-1">
 
             <section tabindex="-1" class="hero-banner hero-professional" id="hero-particles-effect" aria-labelledby="hero-name">
+                <div class="hero-banner-geometry" aria-hidden="true">
+                    <span class="hero-banner-sweep"></span>
+                    <span class="hero-banner-band"></span>
+                    <span class="hero-banner-edge"></span>
+                    <span class="hero-banner-lines"></span>
+                </div>
                 <div class="container">
                     <div class="hero-profile-grid">
                         <div class="hero-copy">
@@ -136,12 +142,16 @@
                                     <a class="hero-action" href="#contact">Contact Me</a>
                                 </div>
                         </div>
+                        <ul class="hero-professional-links" aria-label="Professional profiles and email">
+                                    <li><a href="https://www.linkedin.com/in/ibne-sayad" aria-label="Ibne Sayad on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+                                    <li><a href="https://github.com/Ibne-Sayad" aria-label="Ibne Sayad on GitHub"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+                                    <li><a href="mailto:ibnsaad8772@gmail.com" aria-label="Email Ibne Sayad"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a></li>
+                                </ul>
                         <figure class="hero-visual">
-                            <div class="hero-portrait-frame">
+<div class="hero-portrait-stage">
                                 <img src="img/bg/ibne-sayad-ai-software-qa.jpg" srcset="img/bg/ibne-sayad-ai-software-qa-480.jpg 480w, img/bg/ibne-sayad-ai-software-qa-960.jpg 960w, img/bg/ibne-sayad-ai-software-qa.jpg 1200w" sizes="(max-width: 575.98px) 244px, (max-width: 991.98px) 320px, 400px" alt="Ibne Sayad, AI and Data Science researcher and Software QA Engineer" width="1200" height="1288" fetchpriority="high" class="img-fluid">
                             </div>
                             <figcaption class="hero-brand-affiliation">
-                                <span>BMW Group</span>
                                 <div class="hero-brand-strip" role="group" aria-label="Current employer group brands">
                                     <img src="assets/companies/bmw.svg" alt="BMW logo" width="116" height="120" loading="lazy" decoding="async">
                                     <img src="assets/companies/mini.svg" alt="MINI logo" width="189" height="120" loading="lazy" decoding="async">
@@ -149,84 +159,33 @@
                                 </div>
                             </figcaption>
                         </figure>
-                        <ul class="hero-professional-links" aria-label="Professional profiles and email">
-                                    <li><a href="https://www.linkedin.com/in/ibne-sayad" aria-label="Ibne Sayad on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
-                                    <li><a href="https://github.com/Ibne-Sayad" aria-label="Ibne Sayad on GitHub"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-                                    <li><a href="mailto:ibnsaad8772@gmail.com" aria-label="Email Ibne Sayad"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a></li>
-                                </ul>
+
                     </div>
                 </div>
             </section>
 
-            <section tabindex="-1" class="section" id="about">
+            <section tabindex="-1" class="section" id="about" aria-labelledby="about-title">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="about-img">
-                                <img loading="lazy" decoding="async" width="1200" height="1600" src="img/bg/ibne-sayad-about.jpg" srcset="img/bg/ibne-sayad-about-480.jpg 480w, img/bg/ibne-sayad-about-800.jpg 800w, img/bg/ibne-sayad-about.jpg 1200w" sizes="(max-width: 479px) calc(100vw - 48px), (max-width: 991px) 420px, 560px" alt="Ibne Sayad Software QA Engineer and AI Researcher" title="About image" class="img-fluid">
-
+                    <div class="about-profile-grid">
+                        <figure class="about-portrait">
+                            <img loading="lazy" decoding="async" width="1200" height="1600" src="img/bg/ibne-sayad-about.jpg" srcset="img/bg/ibne-sayad-about-480.jpg 480w, img/bg/ibne-sayad-about-800.jpg 800w, img/bg/ibne-sayad-about.jpg 1200w" sizes="(max-width: 575.98px) 260px, (max-width: 991.98px) 300px, 360px" alt="Ibne Sayad in a casual outdoor portrait" class="img-fluid">
+                        </figure>
+                        <div class="about-profile-copy">
+                            <p class="about-eyebrow">About Ibne Sayad</p>
+                            <h2 id="about-title">Software quality, from testing to test management.</h2>
+                            <div class="about-summary">
+                                <p>I am a Software QA &amp; Test Management Engineer with 4+ years of experience across web, mobile, API, and enterprise software testing. I currently work as a Test Management Engineer Intern at BMW Group, contributing to digital transformation and Virtual Factory initiatives.</p>
+                                <p>Previously, I worked at HaCon &ndash; A Siemens Company. My professional focus spans test management, software QA, test automation, and quality engineering.</p>
+                                <p>Alongside my professional work, I am pursuing an M.Sc. in Artificial Intelligence at FAU Erlangen-Nürnberg, with AI and Data Science as my academic and research direction.</p>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="about-inner">
-                                <span class="about-label">About Ibne Sayad</span>
-                                <h2>I am here with 4+ years of professional experience!</h2>
-                                <p>
-                                    Software QA Engineer with 4+ years of experience in manual and automated testing for web, mobile, API, and enterprise applications.
-                                    Experienced in delivering high-quality software through functional, automation, and accessibility testing within Agile Scrum teams.
-                                    Recently contributed to one of Europe's largest public transport platforms at HaCon (A Siemens Company) while pursuing an M.Sc. in Artificial Intelligence at FAU Erlangen–Nürnberg.
-                                </p>
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6">
-                                        <ul class="mb-resp-15">
-                                            <li>
-                                                <div class="text">
-                                                    <p class="about-field-label">Name :</p>
-                                                    <p>Ibne Sayad</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="text">
-                                                    <p class="about-field-label">Country :</p>
-                                                    <p>Germany</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="text">
-                                                    <p class="about-field-label">Designation :</p>
-                                                    <p>Software QA Engineer</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <ul>
-                                            <li>
-                                                <div class="text">
-                                                    <p class="about-field-label">University :</p>
-                                                    <p>Friedrich-Alexander-Universität Erlangen-Nürnberg</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="text">
-                                                    <p class="about-field-label">Languages :</p>
-                                                    <p>English, Bengali, Hindi, Urdu</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="text">
-                                                    <p class="about-field-label">Address :</p>
-                                                    <p>Erlangen, Bavaria, Germany</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <a href="assets/resume/Ibne_Sayad_Resume_QA_Engineer.pdf" class="primary-btn">
-                                    <span class="text">See resume</span>
-                                    <span class="icon"><i class="fa fa-download" aria-hidden="true"></i></span>
-                                </a>
-                            </div>
+                            <dl class="about-profile-details">
+                                <div><dt>Name</dt><dd>Ibne Sayad</dd></div>
+                                <div><dt>Location</dt><dd>Erlangen, Germany</dd></div>
+                                <div><dt>Current Role</dt><dd>Test Management Engineer Intern</dd></div>
+                                <div><dt>Education</dt><dd>M.Sc. Artificial Intelligence @ FAU</dd></div>
+                                <div class="about-languages"><dt>Languages</dt><dd>English, Bengali, Hindi/Urdu, German (A1)</dd></div>
+                            </dl>
+                            <a href="assets/resume/Ibne_Sayad_Resume_QA_Engineer.pdf" class="about-resume-link">View CV / Resume <i class="fa fa-download" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
